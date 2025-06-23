@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/ava-ui-lib.esm.js"></script>
-    <script nomodule src="/build/ava-ui-lib.js"></script>
-  </head>
-  <body>
-    <my-component first="Stencil" middle="'Don't call me a framework'" last="JS"></my-component>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/ava-ui-lib.esm.js"></script>
+  <script nomodule src="/build/ava-ui-lib.js"></script>
+</head>
+
+<body>
+
+
+  <!-- ava-button -->
+  <ava-button label="Filters">
+    <span slot="icon" class="ava-btn-icon">
+      <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+        stroke-linejoin="round" height="16px" width="16px" xmlns="http://www.w3.org/2000/svg">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          d="M11.36 20.213l-2.36 .787v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414" />
+        <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+        <path d="M20.2 20.2l1.8 1.8" />
+      </svg>
+    </span>
+  </ava-button>
+
+
+</body>
+
 </html>

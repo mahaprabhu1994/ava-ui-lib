@@ -6,56 +6,40 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
+    interface AvaButton {
         /**
-          * The first name
+          * Button label text
          */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+        "label": string;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLAvaButtonElement extends Components.AvaButton, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLAvaButtonElement: {
+        prototype: HTMLAvaButtonElement;
+        new (): HTMLAvaButtonElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "ava-button": HTMLAvaButtonElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
+    interface AvaButton {
         /**
-          * The first name
+          * Button label text
          */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+        "label"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "ava-button": AvaButton;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "ava-button": LocalJSX.AvaButton & JSXBase.HTMLAttributes<HTMLAvaButtonElement>;
         }
     }
 }
