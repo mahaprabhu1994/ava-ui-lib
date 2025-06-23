@@ -1,0 +1,12 @@
+{
+  "entries": [
+    "components/ava-button/ava-button.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.35.1",
+    "typescriptVersion": "5.5.4"
+  },
+  "collections": [],
+  "bundles": []
+}

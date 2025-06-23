@@ -1,0 +1,2 @@
+import{p as t,g as a,b as r}from"./p-Dwt9gxAC.js";export{s as setNonce}from"./p-Dwt9gxAC.js";var o=()=>{const a=import.meta.url;const s={};if(a!==""){s.resourcesUrl=new URL(".",a).href}return t(s)};o().then((async t=>{await a();return r([["p-0364c6ba",[[1,"ava-button",{label:[1]}]]]],t)}));
+//# sourceMappingURL=ava-ui-lib.esm.js.map
